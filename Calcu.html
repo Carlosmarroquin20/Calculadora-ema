@@ -46,11 +46,52 @@
  <br>
  <br>
  <!--Mostrador del resultado de la operacion-->
- <label for="resultado"><h3>→→→   Resultado   ←←←</h3></label>
- <input type= "number" id="resultado" name="resultado">
+ <label for="resultado"><h3>→→→  resultado  ←←←</h3></label>
+ <input type= "number" id="→→→  resultado  ←←←" name="→→→  resultado  ←←←">
  <br>
  <br>
- 
+ <script>
+    function suma(){
+
+        //Variables
+        var a;
+        var b;
+        var c;
+        var resultado;
+
+        //Valores del formulario
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        var resultado;
+
+
+        if(a == "" ){
+            a = 0;
+        }else{
+           a = parseInt(a);
+        }
+
+        if(b == "" ){
+            b = 0;
+        }else{
+           b = parseInt(b);
+        }
+
+        if(c == "" ){
+            c = 0;
+        }else{
+           c = parseInt(c);
+        }
+
+        // suma de los valores
+        resultado = a + b + c;
+
+        // resultado
+        document.getElementById("→→→  resultado  ←←←").value = resultado;
+
+    }
+</script>
 
 
     </center>
